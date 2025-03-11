@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*Paleta de Colores*/
+:root {
+  --color-primario: #2d336b;
+  --color-secundario: #a9b5df;
+  --color-terciario: #7886c7;
+  --color-coloradicional1: #fff2f2;
+  --color-coloradicional2: #eee;
+  --color-negro: #000000;
+  --color-blanco: #ffffff;
+  --color-gris: #777777;
+  --color-input: #eee;
+  --color-gris2: #888;
+  --color-gris3: #333;
+  --color-oferta: #ff5454;
+  --color-cancelado: #14be2e;
+  --color-pendiente: #eff22a;
+  --color-enproceso: #ed8637;
+  --color-entregado: #007aff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/*main*/
+main {
+  margin-top: 4rem;
+  margin-top: 4rem;
+  margin-left: 4rem;
+  padding: 2rem;
+  transition: padding-left 0.5s ease;
+  align-items: center;
+  text-align: center;
+}
+
+main .banner {
+  width: 70%;
+  height: auto;
+}
+main .platillos {
+  width: 50%;
+  height: auto;
+}
+main .titulo {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--color-terciario);
+}
+main .subtitulo {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--color-terciario);
+}
+main main.menu-toggle {
+  margin-left: 18.75rem;
+}
+/*PEDIDOSSSSSSSSSSSSSSSSSSS*/
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: var(--color-blanco);
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 200px;
+  text-align: left;
+  border: 2px solid #d6d6f5;
+}
+
+/* Asegurar que haya 4 tarjetas por fila */
+@media screen and (min-width: 768px) {
+  .card {
+    flex: 1 1 calc(25% - 20px); /* Cada card ocupa el 25% del ancho */
+    max-width: 200px;
+  }
+}
+
+.card h3 {
+  text-align: center;
+  color: var(--color-primario);
+}
+
+.total {
+  font-weight: bold;
+  text-align: right;
+  color: var(--color-negro);
+}
+
+.card .text {
+  margin: 5px 0;
+  font-size: 14px;
+  color: var(--color-terciario);
+  font-weight: bold;
+}
+
+/* Estilos de los estados */
+.estado {
+  font-weight: bold;
+  padding: 3px 6px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+/* Colores de los estados */
+.cancelado {
+  color: var(--color-cancelado);
+}
+
+.pendiente {
+  color: var(--color-pendiente);
+}
+
+.proceso {
+  color: var(--color-enproceso);
+}
+
+.entregado {
+  color: var(--color-entregado);
+}

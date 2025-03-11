@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es-pe">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="./assets/css/dash.css" />
+    <link rel="stylesheet" href="./assets/css/comentarios.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <div class="menu-container">
+          <div class="menu" id="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="brand">
+          <img src="./assets/img/logops.jpg" alt="logo-dashps" class="logo" />
+        </div>
+      </div>
+
+      <div class="right">
+        <!--<a href="#" class="icons-header">
+          <img src="./assets/icons/home-angle-svgrepo-com.svg" alt="x" />
+        </a>
+        <a href="#" class="icons-header">
+          <img src="./assets/icons/home-angle-svgrepo-com.svg" alt="x" />
+        </a>
+        <a href="#" class="icons-header">
+          <img src="./assets/icons/home-angle-svgrepo-com.svg" alt="x" />
+        </a>-->
+        <p><span>¡BIENVENID@</span> Michelle!</p>
+        <img src="./assets/img/perfil.jpg" alt="img-user" class="user" />
+      </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <nav>
+        <ul>
+          <li>
+            <a href="./dash.html">
+              <img src="./assets/icons/home-angle-svgrepo-com.svg" alt="" />
+              <span>Inicio</span>
+            </a>
+          </li>
+          <li>
+            <a href="./carta.html">
+              <img src="./assets/icons/shop-cart-svgrepo-com.svg" alt="" />
+              <span>Carta</span>
+            </a>
+          </li>
+          <li>
+            <a href="./pedidos.html">
+              <img src="./assets/icons/page-svgrepo-com.svg" alt="" />
+              <span>Pedidos</span>
+            </a>
+          </li>
+          <li>
+            <a href="./reportes.html">
+              <img src="./assets/icons/statistics-svgrepo-com.svg" alt="" />
+              <span>Reportes</span>
+            </a>
+          </li>
+          <li>
+            <a href="./comentarios.html" class="selected">
+              <img src="./assets/icons/comments-svgrepo-com.svg" alt="" />
+              <span>Comentarios</span>
+            </a>
+          </li>
+          <br /><br />
+          <button
+            onclick="window.location.href='./iniciosesion.html'"
+            id="logout-btn"
+            class="logout-button"
+          >
+            Cerrar Sesión
+          </button>
+        </ul>
+      </nav>
+    </div>
+    <main id="main">
+      <div class="container">
+        <div class="card">
+          <img src="./assets/img/avatar1.png" alt="Usuario" />
+          <div class="info">
+            <h3>Anónimo</h3>
+            <div class="stars">★★★★★</div>
+            <p>
+              ¡El mejor pollo a la brasa que he probado! Súper jugoso y jugado.
+              👍🏼
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/img/avatar2.png" alt="Usuario" />
+          <div class="info">
+            <h3>Junior</h3>
+            <div class="stars">★★★★☆</div>
+            <p>
+              Excelente atención y un sistema fácil de usar para realizar
+              pedidos. ¡Muy recomendado! ✨
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/img/avatar3.png" alt="Usuario" />
+          <div class="info">
+            <h3>Nathali</h3>
+            <div class="stars">★★★★★</div>
+            <p>
+              La interfaz del dashboard es intuitiva y rápida. Me facilita mucho
+              la gestión de pedidos y ventas. 💪🏼
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/img/avatar4.png" alt="Usuario" />
+          <div class="info">
+            <h3>Damaris</h3>
+            <div class="stars">★★★★★</div>
+            <p>
+              Sería genial agregar más opciones de personalización a los combos.
+              ¡Todo lo demás está perfecto! 🚀
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/img/avatar5.png" alt="Usuario" />
+          <div class="info">
+            <h3>Daniel</h3>
+            <div class="stars">★★★★★</div>
+            <p>
+              Siempre cumplen con los tiempos de entrega y la calidad del
+              producto es insuperable. 🤩
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/img/avatar6.png" alt="Usuario" />
+          <div class="info">
+            <h3>Ore</h3>
+            <div class="stars">★★★★☆</div>
+            <p>
+              El sistema de reportes es muy útil para llevar un control
+              detallado de las ventas diarias. 😁
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/img/avatar7.png" alt="Usuario" />
+          <div class="info">
+            <h3>Gian</h3>
+            <div class="stars">★★★★☆</div>
+            <p>
+              El diseño del dashboard es moderno y funcional. Me gusta cómo
+              organizan la información. 😋👏🏼
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/img/avatar8.png" alt="Usuario" />
+          <div class="info">
+            <h3>Alessandro</h3>
+            <div class="stars">★★★★☆</div>
+            <p>
+              El soporte técnico es excelente. Cualquier duda o problema lo
+              solucionan rápido. ¡Gran servicio! ⚙️ 😁
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./assets/js/dash.js"></script>
+  </body>
+</html>

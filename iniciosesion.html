@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es-pe">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/iniciosesion.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Iniciar Sesión</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box login">
+        <form action="./dash.html">
+          <img class="logo" src="./assets/img/logops.jpg" alt="logops" />
+          <h1 class="h1">Iniciar Sesión</h1>
+          <div class="input-box">
+            <input type="text" placeholder="" required />
+            <i class="bx bxs-user"></i>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="" required />
+            <i class="bx bxs-lock-alt"></i>
+          </div>
+          <button type="submit" class="btn">Iniciar Sesión</button>
+        </form>
+      </div>
+
+      <div class="form-box register">
+        <form action="">
+          <img class="logo" src="./assets/img/logops.jpg" alt="logops" />
+          <h1 class="h1">Registro</h1>
+          <div class="input-box">
+            <input type="text" placeholder="" required />
+            <i class="bx bxs-user"></i>
+          </div>
+          <div class="input-box">
+            <input type="email" placeholder="" required />
+            <i class="bx bxs-envelope"></i>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="" required />
+            <i class="bx bxs-lock-alt"></i>
+          </div>
+          <button type="submit" class="btn">Registrarme</button>
+        </form>
+      </div>
+      <!-- Contenedor que alterna entre los formularios -->
+      <div class="toggle-box">
+        <!-- Panel que se muestra cuando está la opción de login -->
+        <div class="toggle-panel toggle-left">
+          <h1>Hola, Bienvenid@!</h1>
+          <p>¿No tienes una cuenta?</p>
+          <button class="btn register-btn">Registrarme</button>
+        </div>
+        <!-- Panel que se muestra cuando está la opción de registro -->
+        <div class="toggle-panel toggle-right">
+          <h1>¡Bienvenid@ otra vez¡</h1>
+          <p>¿Ya tienes una cuenta?</p>
+          <button class="btn login-btn">Iniciar Sesión</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/iniciosesion.js"></script>
+  </body>
+</html>

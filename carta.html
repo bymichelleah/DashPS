@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es-pe">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carta</title>
+    <link rel="stylesheet" href="./assets/css/dash.css" />
+    <link rel="stylesheet" href="./assets/css/carta.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <div class="menu-container">
+          <div class="menu" id="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="brand">
+          <img src="./assets/img/logops.jpg" alt="logo-dashps" class="logo" />
+        </div>
+      </div>
+
+      <div class="right">
+        <!--<a href="#" class="icons-header">
+          <img src="./assets/icons/home-angle-svgrepo-com.svg" alt="x" />
+        </a>
+        <a href="#" class="icons-header">
+          <img src="./assets/icons/home-angle-svgrepo-com.svg" alt="x" />
+        </a>
+        <a href="#" class="icons-header">
+          <img src="./assets/icons/home-angle-svgrepo-com.svg" alt="x" />
+        </a>-->
+        <p><span>¡BIENVENID@</span> Michelle!</p>
+        <img src="./assets/img/perfil.jpg" alt="img-user" class="user" />
+      </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <nav>
+        <ul>
+          <li>
+            <a href="./dash.html">
+              <img src="./assets/icons/home-angle-svgrepo-com.svg" alt="" />
+              <span>Inicio</span>
+            </a>
+          </li>
+          <li>
+            <a href="./carta.html" class="selected">
+              <img src="./assets/icons/shop-cart-svgrepo-com.svg" alt="" />
+              <span>Carta</span>
+            </a>
+          </li>
+          <li>
+            <a href="./pedidos.html">
+              <img src="./assets/icons/page-svgrepo-com.svg" alt="" />
+              <span>Pedidos</span>
+            </a>
+          </li>
+          <li>
+            <a href="./reportes.html">
+              <img src="./assets/icons/statistics-svgrepo-com.svg" alt="" />
+              <span>Reportes</span>
+            </a>
+          </li>
+          <li>
+            <a href="./comentarios.html">
+              <img src="./assets/icons/comments-svgrepo-com.svg" alt="" />
+              <span>Comentarios</span>
+            </a>
+          </li>
+          <br /><br />
+          <button
+            onclick="window.location.href='./iniciosesion.html'"
+            id="logout-btn"
+            class="logout-button"
+          >
+            Cerrar Sesión
+          </button>
+        </ul>
+      </nav>
+    </div>
+    <main id="main">
+      <h2>PROMOCIONES</h2>
+      <div class="contenedor-cartas">
+        <div class="carta">
+          <img src="./assets/img/carta1.png" alt="Combo Chaufero" />
+          <div class="contenido">
+            <h3>Combo Chaufero</h3>
+            <p>
+              1 pollo a la brasa + papas + arroz chaufa + chorizo a la chaufa.
+            </p>
+            <span class="precio" >S/. 99.90</span>
+            <button class="pedir-btn">🤍 Pedir</button>
+          </div>
+        </div>
+
+        <div class="carta">
+          <img src="./assets/img/carta2.png" alt="Banquete Pollero" />
+          <div class="contenido">
+            <h3>Banquete Pollero</h3>
+            <p>
+              1 pollo a la brasa + papas fritas + 1 tomate + 1 guacamole +
+              salsas.
+            </p>
+            <spavn class="precio">S/. 99.90</span>
+            <button class="pedir-btn">🤍 Pedir</button>
+          </div>
+        </div>
+
+        <div class="carta">
+          <img src="./assets/img/carta7.png" alt="Lunes y Miércoles" />
+          <div class="contenido">
+            <h3>Lunes y Miércoles de Mostrito - Combo</h3>
+            <p>
+              1/4 de pollo a la brasa + papas fritas + arroz chaufa + salsas.
+            </p>
+            <span class="precio oferta">S/. 19.90 <del>S/. 20.00</del></span>
+            <button class="pedir-btn">🤍 Pedir</button>
+          </div>
+        </div>
+      </div>
+
+      <h2>TUS CLÁSICOS</h2>
+      <div class="contenedor-cartas">
+        <div class="carta">
+          <img src="./assets/img/carta4.png" alt="1/4 Brasa Combo 2" />
+          <div class="contenido">
+            <h3>1/4 Brasa con Acompañamiento y Ensalada - Combo 2</h3>
+            <p>1/4 Brasa con bol, 1 papa frita, ensalada personal, salsas.</p>
+            <span class="precio">S/. 29.90</span>
+            <button class="pedir-btn">🤍 Pedir</button>
+          </div>
+        </div>
+
+        <div class="carta">
+          <img src="./assets/img/carta5.png" alt="1/4 Brasa Combo 3" />
+          <div class="contenido">
+            <h3>1/4 Brasa con Papas y Ensalada - Combo 3</h3>
+            <p>1/4 Brasa con bol, 1 papa frita, ensalada personal, salsas.</p>
+            <span class="precio">S/. 25.90</span>
+            <button class="pedir-btn">🤍 Pedir</button>
+          </div>
+        </div>
+
+        <div class="carta">
+          <img src="./assets/img/carta6.png" alt="Pollo Brasa PS - Combo 4" />
+          <div class="contenido">
+            <h3>Pollo Brasa PS con Papas y Ensalada - Combo 4</h3>
+            <p>
+              1 Pollo entero con bol, 1 papa frita, ensalada familiar, salsas.
+            </p>
+            <span class="precio">S/. 81.90</span>
+            <button class="pedir-btn">🤍 Pedir</button>
+          </div>
+        </div>
+        <div class="carta">
+          <img src="./assets/img/carta8.png" alt="Pollo Brasa PS - Combo 5" />
+          <div class="contenido">
+            <h3>
+              Pollo Brasa PS con 4 Acompañamientos personal y ensalada - Combo 5
+            </h3>
+            <p>
+              1 Pollo Brasa Don Beli, 4 Acompañamientos Personal, 1 Ensalada
+              Fresca Familiar, Salsas
+            </p>
+            <span class="precio">S/. 89.90</span>
+            <button class="pedir-btn">🤍 Pedir</button>
+          </div>
+        </div>
+        <div class="carta">
+          <img src="./assets/img/carta8.png" alt="Pollo Brasa PS - Combo 6" />
+          <div class="contenido">
+            <h3>
+              Pollo Brasa PS con 4 Acompañamientos personal y ensalada - Combo 6
+            </h3>
+            <p>
+              1 Pollo Brasa Don Beli, 4 Acompañamientos Personal, 1 Ensalada
+              Fresca Familiar, Salsas.
+            </p>
+            <span class="precio">S/. 89.90</span>
+            <button class="pedir-btn">🤍 Pedir</button>
+          </div>
+        </div>
+        <div class="carta">
+          <img src="./assets/img/carta9.png" alt="Pollo Brasa PS - Combo 7" />
+          <div class="contenido">
+            <h3>
+              Pollo Brasa PS con 4 Acompañamientos personal y ensalada - Combo 7
+            </h3>
+            <p>
+              1/2 Pollo Brasa Don Beli, 2 Acompañamientos Personal, 1 Ensalada
+              Fresca Mediana, Salsas
+            </p>
+            <span class="precio">S/. 49.90</span>
+            <button class="pedir-btn">🤍 Pedir</button>
+          </div>
+        </div>
+    </main>
+    <div class="modal" id="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <img src="./assets/img/star-overlay.png" alt="Estrella feliz" class="icono">
+          <h2>PEDIDO AGREGADO</h2>
+      </div>
+  </div>
+
+    <script src="./assets/js/dash.js"></script>
+    <script src="./assets/js/carta.js"></script>
+  </body>
+</html>

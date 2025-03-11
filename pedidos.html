@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es-pe">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="./assets/css/dash.css" />
+    <link rel="stylesheet" href="./assets/css/pedidos.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <div class="menu-container">
+          <div class="menu" id="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="brand">
+          <img src="./assets/img/logops.jpg" alt="logo-dashps" class="logo" />
+        </div>
+      </div>
+
+      <div class="right">
+        <!--<a href="#" class="icons-header">
+          <img src="./assets/icons/home-angle-svgrepo-com.svg" alt="x" />
+        </a>
+        <a href="#" class="icons-header">
+          <img src="./assets/icons/home-angle-svgrepo-com.svg" alt="x" />
+        </a>
+        <a href="#" class="icons-header">
+          <img src="./assets/icons/home-angle-svgrepo-com.svg" alt="x" />
+        </a>-->
+        <p><span>¡BIENVENID@</span> Michelle!</p>
+        <img src="./assets/img/perfil.jpg" alt="img-user" class="user" />
+      </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <nav>
+        <ul>
+          <li>
+            <a href="./dash.html">
+              <img src="./assets/icons/home-angle-svgrepo-com.svg" alt="" />
+              <span>Inicio</span>
+            </a>
+          </li>
+          <li>
+            <a href="./carta.html">
+              <img src="./assets/icons/shop-cart-svgrepo-com.svg" alt="" />
+              <span>Carta</span>
+            </a>
+          </li>
+          <li>
+            <a href="./pedidos.html" class="selected">
+              <img src="./assets/icons/page-svgrepo-com.svg" alt="" />
+              <span>Pedidos</span>
+            </a>
+          </li>
+          <li>
+            <a href="./reportes.html">
+              <img src="./assets/icons/statistics-svgrepo-com.svg" alt="" />
+              <span>Reportes</span>
+            </a>
+          </li>
+          <li>
+            <a href="./comentarios.html">
+              <img src="./assets/icons/comments-svgrepo-com.svg" alt="" />
+              <span>Comentarios</span>
+            </a>
+          </li>
+          <br /><br />
+          <button
+            onclick="window.location.href='./iniciosesion.html'"
+            id="logout-btn"
+            class="logout-button"
+          >
+            Cerrar Sesión
+          </button>
+        </ul>
+      </nav>
+    </div>
+    <main id="main">
+      <div class="cards-container">
+        <div class="card">
+          <h3>PEDIDO N° 1</h3>
+          <p class="text"><strong>Código:</strong> 14326</p>
+          <hr />
+          <p class="text"><strong>Mesa:</strong> 6</p>
+          <hr />
+          <p class="text"><strong>Cliente:</strong> Michelle</p>
+          <hr />
+          <p class="text"><strong>Combo Chaufero:</strong>S/.99.90</p>
+          <hr />
+          <p class="text">
+            <strong>Estado:</strong>
+            <span class="estado cancelado">Cancelado</span>
+          </p>
+          <hr />
+          <p class="text"><strong>M. pago:</strong> Yape📱</p>
+          <hr />
+          <p class="total"><strong>TOTAL:</strong> S/.99.90</p>
+        </div>
+
+        <div class="card">
+          <h3>PEDIDO N° 2</h3>
+          <p class="text"><strong>Código:</strong> 16521</p>
+          <hr />
+          <p class="text"><strong>Mesa:</strong> 3</p>
+          <hr />
+          <p class="text"><strong>Cliente:</strong> Junior</p>
+          <hr />
+          <p class="text"><strong>Banquete Pollero:</strong>S/.99.90</p>
+          <hr />
+          <p class="text">
+            <strong>Estado:</strong>
+            <span class="estado pendiente">Pendiente</span>
+          </p>
+          <hr />
+          <p class="text"><strong>M. pago:</strong> Efectivo💵</p>
+          <hr />
+          <p class="total"><strong>TOTAL:</strong> S/.99.90</p>
+        </div>
+
+        <div class="card">
+          <h3>PEDIDO N° 3</h3>
+          <p class="text"><strong>Código:</strong> 18534</p>
+          <hr />
+          <p class="text"><strong>Mesa:</strong> 1</p>
+          <hr />
+          <p class="text"><strong>Cliente:</strong>Nathali</p>
+          <hr />
+          <p class="text"><strong>Combo 1:</strong>S/.19.90</p>
+          <hr />
+          <p class="text">
+            <strong>Estado:</strong>
+            <span class="estado proceso">En proceso</span>
+          </p>
+          <hr />
+          <p class="text"><strong>M. pago:</strong> Tarjeta💳</p>
+          <hr />
+          <p class="total"><strong>TOTAL:</strong>S/.19.90</p>
+        </div>
+
+        <div class="card">
+          <h3>PEDIDO N° 4</h3>
+          <p class="text"><strong>Código:</strong> 14426</p>
+          <hr />
+          <p class="text"><strong>Mesa:</strong> 2</p>
+          <hr />
+          <p class="text"><strong>Cliente:</strong> Damaris</p>
+          <hr />
+          <p class="text"><strong>Combo 2:</strong> S/.29.90</p>
+          <hr />
+          <p class="text">
+            <strong>Estado:</strong>
+            <span class="estado entregado">Entregado</span>
+          </p>
+          <hr />
+          <p class="text"><strong>M. pago:</strong> Efectivo💵</p>
+          <hr />
+          <p class="total"><strong>TOTAL:</strong> S/.29.90</p>
+        </div>
+
+        <div class="card">
+          <h3>PEDIDO N° 5</h3>
+          <p class="text"><strong>Código:</strong> 18632</p>
+          <hr />
+          <p class="text"><strong>Mesa:</strong> 4</p>
+          <hr />
+          <p class="text"><strong>Cliente:</strong> Ore</p>
+          <hr />
+          <p class="text"><strong>Combo 7:</strong> S/.49.90</p>
+          <hr />
+          <p class="text">
+            <strong>Estado:</strong>
+            <span class="estado proceso">En proceso</span>
+          </p>
+          <hr />
+          <p class="text"><strong>M. pago:</strong> Yape📱</p>
+          <hr />
+          <p class="total"><strong>TOTAL:</strong> S/.49.90</p>
+        </div>
+
+        <div class="card">
+          <h3>PEDIDO N° 6</h3>
+          <p class="text"><strong>Código:</strong> 15374</p>
+          <hr />
+          <p class="text"><strong>Mesa:</strong> 7</p>
+          <hr />
+          <p class="text"><strong>Cliente:</strong> Daniel</p>
+          <hr />
+          <p class="text"><strong>Combo 3:</strong> S/.25.90</p>
+          <hr />
+          <p class="text">
+            <strong>Estado:</strong>
+            <span class="estado entregado">Entregado</span>
+          </p>
+          <hr />
+          <p class="text"><strong>M. pago:</strong> Tarjeta💳</p>
+          <hr />
+          <p class="total"><strong>TOTAL:</strong> S/.25.90</p>
+        </div>
+
+        <div class="card">
+          <h3>PEDIDO N° 7</h3>
+          <p class="text"><strong>Código:</strong> 18624</p>
+          <hr />
+          <p class="text"><strong>Mesa:</strong> 9</p>
+          <hr />
+          <p class="text"><strong>Cliente:</strong> Gian</p>
+          <hr />
+          <p class="text"><strong>Combo 4:</strong> S/.81.90</p>
+          <hr />
+          <p class="text">
+            <strong>Estado:</strong>
+            <span class="estado cancelado">Cancelado</span>
+          </p>
+          <hr />
+          <p class="text"><strong>M. pago:</strong> Efectivo💵</p>
+          <hr />
+          <p class="total"><strong>TOTAL:</strong> S/.81.90</p>
+        </div>
+
+        <div class="card">
+          <h3>PEDIDO N° 8</h3>
+          <p class="text"><strong>Código:</strong> 12275</p>
+          <hr />
+          <p class="text"><strong>Mesa:</strong> 5</p>
+          <hr />
+          <p class="text"><strong>Cliente:</strong> Alessandro</p>
+          <hr />
+          <p class="text"><strong>Combo 6:</strong> S/.89.90</p>
+          <hr />
+          <p class="text">
+            <strong>Estado:</strong>
+            <span class="estado pendiente">Pendiente</span>
+          </p>
+          <hr />
+          <p class="text"><strong>M. pago:</strong> Yape📱</p>
+          <hr />
+          <p class="total"><strong>TOTAL:</strong> S/.89.90</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="./assets/js/dash.js"></script>
+    <script src="./assets/js/carta.js"></script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*Paleta de Colores*/
+:root {
+  --color-primario: #2d336b;
+  --color-secundario: #a9b5df;
+  --color-terciario: #7886c7;
+  --color-coloradicional1: #fff2f2;
+  --color-coloradicional2: #eee;
+  --color-negro: #000000;
+  --color-blanco: #ffffff;
+  --color-gris: #777777;
+  --color-input: #eee;
+  --color-gris2: #888;
+  --color-gris3: #333;
+  --color-oferta: #ff5454;
+  --color-cancelado: #14be2e;
+  --color-pendiente: #eff22a;
+  --color-enproceso: #ed8637;
+  --color-entregado: #007aff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/*main*/
+main {
+  margin-top: 4rem;
+  margin-top: 4rem;
+  margin-left: 4rem;
+  padding: 2rem;
+  transition: padding-left 0.5s ease;
+  align-items: center;
+  text-align: center;
+}
+
+main .banner {
+  width: 70%;
+  height: auto;
+}
+main .platillos {
+  width: 50%;
+  height: auto;
+}
+main .titulo {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--color-terciario);
+}
+main .subtitulo {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--color-terciario);
+}
+main main.menu-toggle {
+  margin-left: 18.75rem;
+}
+
+/*Comentariossssssssss*/
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background: var(--color-blanco);
+  border: 1px solid var(--color-negro);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.info {
+  flex: 1;
+}
+
+h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.stars {
+  color: var(--color-terciario);
+  font-size: 16px;
+}
+
+p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: var(--color-negro);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card img {
+    margin-bottom: 10px;
+  }
+}

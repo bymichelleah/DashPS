@@ -78,14 +78,6 @@ main main.menu-toggle {
   border: 2px solid #d6d6f5;
 }
 
-/* Asegurar que haya 4 tarjetas por fila */
-@media screen and (min-width: 768px) {
-  .card {
-    flex: 1 1 calc(25% - 20px); /* Cada card ocupa el 25% del ancho */
-    max-width: 200px;
-  }
-}
-
 .card h3 {
   text-align: center;
   color: var(--color-primario);
@@ -127,4 +119,11 @@ main main.menu-toggle {
 
 .entregado {
   color: var(--color-entregado);
+}
+/* Asegurar que haya 4 tarjetas por fila */
+@media screen and (min-width: 768px) {
+  .card {
+    flex: 1 1 calc(25% - 20px); /* Cada card ocupa el 25% del ancho */
+    max-width: 200px;
+  }
 }

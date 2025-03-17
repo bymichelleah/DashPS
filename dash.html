@@ -14,7 +14,7 @@
     <header>
       <div class="left">
         <div class="menu-container">
-          <div class="menu" id="menu">
+          <div class="menu" id="menu" aria-label="Menú">
             <div></div>
             <div></div>
             <div></div>
@@ -26,74 +26,84 @@
       </div>
 
       <div class="right">
-        <!--<a href="#" class="icons-header">
-          <img src="./assets/icons/home-angle-svgrepo-com.svg" alt="x" />
-        </a>
-        <a href="#" class="icons-header">
-          <img src="./assets/icons/home-angle-svgrepo-com.svg" alt="x" />
-        </a>
-        <a href="#" class="icons-header">
-          <img src="./assets/icons/home-angle-svgrepo-com.svg" alt="x" />
-        </a>-->
         <p><span>¡BIENVENID@</span> Michelle!</p>
-        <img src="./assets/img/perfil.jpg" alt="img-user" class="user" />
+        <img src="./assets/img/perfil.jpg" alt="Michi" class="user" />
       </div>
     </header>
 
-    <div class="sidebar" id="sidebar">
+    <aside class="sidebar" id="sidebar">
       <nav>
         <ul>
           <li>
             <a href="./dash.html" class="selected">
-              <img src="./assets/icons/home-angle-svgrepo-com.svg" alt="" />
+              <img
+                src="./assets/icons/home-angle-svgrepo-com.svg"
+                alt="Inicio"
+              />
               <span>Inicio</span>
             </a>
           </li>
           <li>
             <a href="./carta.html">
-              <img src="./assets/icons/shop-cart-svgrepo-com.svg" alt="" />
+              <img src="./assets/icons/shop-cart-svgrepo-com.svg" alt="Carta" />
               <span>Carta</span>
             </a>
           </li>
           <li>
             <a href="./pedidos.html">
-              <img src="./assets/icons/page-svgrepo-com.svg" alt="" />
+              <img src="./assets/icons/page-svgrepo-com.svg" alt="Pedidos" />
               <span>Pedidos</span>
             </a>
           </li>
           <li>
             <a href="./reportes.html">
-              <img src="./assets/icons/statistics-svgrepo-com.svg" alt="" />
+              <img
+                src="./assets/icons/statistics-svgrepo-com.svg"
+                alt="Reportes"
+              />
               <span>Reportes</span>
             </a>
           </li>
           <li>
             <a href="./comentarios.html">
-              <img src="./assets/icons/comments-svgrepo-com.svg" alt="" />
+              <img
+                src="./assets/icons/comments-svgrepo-com.svg"
+                alt="Comentarios"
+              />
               <span>Comentarios</span>
             </a>
           </li>
-          <br /><br />
-          <button
-            onclick="window.location.href='./index.html'"
-            id="logout-btn"
-            class="logout-button"
-          >
-            Cerrar Sesión
-          </button>
         </ul>
+
+        <!-- Botón de Cerrar Sesión fuera del <ul> -->
+        <button
+          onclick="window.location.href='./index.html'"
+          id="logout-btn"
+          class="logout-button"
+        >
+          Cerrar Sesión
+        </button>
       </nav>
-    </div>
+    </aside>
+
     <main id="main">
-      <img src="./assets/img/ban.png" alt="banner" class="banner" />
-      <br /><br />
-      <img src="./assets/img/platillos.png" alt="platillos" class="platillos" />
-      <p class="titulo">DESCUBRE TODO LO QUE TENEMOS PARA TI:</p>
-      <p class="subtitulo">
-        Pollo a la brasa, papas fritas, chaufita, nuestras ensaladas, las ya
-        <br />
-        famosas salsas MT y mucho más.
-      </p>
+      <section>
+        <img src="./assets/img/ban.png" alt="Banner principal" class="banner" />
+        <br /><br />
+        <img
+          src="./assets/img/platillos.png"
+          alt="Imagen de platillos"
+          class="platillos"
+        />
+      </section>
+
+      <section>
+        <h2 class="titulo">DESCUBRE TODO LO QUE TENEMOS PARA TI:</h2>
+        <p class="subtitulo">
+          Pollo a la brasa, papas fritas, chaufita, nuestras ensaladas, las ya
+          famosas salsas MT y mucho más.
+        </p>
+      </section>
     </main>
 
     <script src="./assets/js/dash.js"></script>

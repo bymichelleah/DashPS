@@ -11,59 +11,84 @@
     <title>Iniciar Sesión</title>
   </head>
   <body>
-    <div class="container">
-      <div class="form-box login">
-        <form action="./dash.html">
+    <main class="container">
+      <section class="form-box login">
+        <form id="login-form">
           <img class="logo" src="./assets/img/logops.jpg" alt="logops" />
           <h1 class="h1">Iniciar Sesión</h1>
+
           <div class="input-box">
-            <input type="text" placeholder="" required />
+            <input type="text" id="username" placeholder="Usuario" required />
             <i class="bx bxs-user"></i>
           </div>
+
           <div class="input-box">
-            <input type="password" placeholder="" required />
+            <input
+              type="password"
+              id="password"
+              placeholder="Contraseña"
+              required
+            />
             <i class="bx bxs-lock-alt"></i>
           </div>
+
           <button type="submit" class="btn">Iniciar Sesión</button>
         </form>
-      </div>
+      </section>
 
-      <div class="form-box register">
-        <form action="">
+      <section class="form-box register">
+        <form id="register-form">
           <img class="logo" src="./assets/img/logops.jpg" alt="logops" />
           <h1 class="h1">Registro</h1>
+
           <div class="input-box">
-            <input type="text" placeholder="" required />
+            <input
+              type="text"
+              id="new-username"
+              placeholder="Usuario"
+              required
+            />
             <i class="bx bxs-user"></i>
           </div>
+
           <div class="input-box">
-            <input type="email" placeholder="" required />
+            <input
+              type="email"
+              id="email"
+              placeholder="Correo Electrónico"
+              required
+            />
             <i class="bx bxs-envelope"></i>
           </div>
+
           <div class="input-box">
-            <input type="password" placeholder="" required />
+            <input
+              type="password"
+              id="new-password"
+              placeholder="Contraseña"
+              required
+            />
             <i class="bx bxs-lock-alt"></i>
           </div>
+
           <button type="submit" class="btn">Registrarme</button>
         </form>
-      </div>
-      <!-- Contenedor que alterna entre los formularios -->
-      <div class="toggle-box">
-        <!-- Panel que se muestra cuando está la opción de login -->
-        <div class="toggle-panel toggle-left">
-          <h1>Hola, Bienvenid@!</h1>
-          <p>¿No tienes una cuenta?</p>
-          <button class="btn register-btn">Registrarme</button>
-        </div>
-        <!-- Panel que se muestra cuando está la opción de registro -->
-        <div class="toggle-panel toggle-right">
-          <h1>¡Bienvenid@ otra vez¡</h1>
-          <p>¿Ya tienes una cuenta?</p>
-          <button class="btn login-btn">Iniciar Sesión</button>
-        </div>
-      </div>
-    </div>
+      </section>
 
+      <div class="toggle-box">
+        <div class="toggle-panel toggle-left">
+          <h2 class="respon1">Hola, Bienvenid@!</h2>
+          <p>¿No tienes una cuenta?</p>
+          <button type="button" class="btn register-btn">Registrarme</button>
+        </div>
+
+        <div class="toggle-panel toggle-right">
+          <h2 class="respon1">¡Bienvenid@ otra vez!</h2>
+          <p>¿Ya tienes una cuenta?</p>
+          <button type="button" class="btn login-btn">Iniciar Sesión</button>
+        </div>
+      </div>
+    </main>
     <script src="./assets/js/iniciosesion.js"></script>
   </body>
 </html>

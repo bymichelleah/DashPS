@@ -15,7 +15,7 @@
     <header>
       <div class="left">
         <div class="menu-container">
-          <div class="menu" id="menu">
+          <div class="menu" id="menu" aria-label="Menú">
             <div></div>
             <div></div>
             <div></div>
@@ -27,21 +27,12 @@
       </div>
 
       <div class="right">
-        <!--<a href="#" class="icons-header">
-          <img src="./assets/icons/home-angle-svgrepo-com.svg" alt="x" />
-        </a>
-        <a href="#" class="icons-header">
-          <img src="./assets/icons/home-angle-svgrepo-com.svg" alt="x" />
-        </a>
-        <a href="#" class="icons-header">
-          <img src="./assets/icons/home-angle-svgrepo-com.svg" alt="x" />
-        </a>-->
         <p><span>¡BIENVENID@</span> Michelle!</p>
         <img src="./assets/img/perfil.jpg" alt="img-user" class="user" />
       </div>
     </header>
 
-    <div class="sidebar" id="sidebar">
+    <aside class="sidebar" id="sidebar">
       <nav>
         <ul>
           <li>
@@ -84,7 +75,7 @@
           </button>
         </ul>
       </nav>
-    </div>
+    </aside>
     <main id="main">
       <h2>PROMOCIONES</h2>
       <div class="contenedor-cartas">
@@ -96,7 +87,7 @@
               1 pollo a la brasa + papas + arroz chaufa + chorizo a la chaufa.
             </p>
             <span class="precio" >S/. 99.90</span>
-            <button class="pedir-btn">🤍 Pedir</button>
+            <button class="pedir-btn" id="pedir-btn"><span aria-hidden="true">🤍 Pedir</span></button>
           </div>
         </div>
 
@@ -108,20 +99,20 @@
               1 pollo a la brasa + papas fritas + 1 tomate + 1 guacamole +
               salsas.
             </p>
-            <spavn class="precio">S/. 99.90</span>
-            <button class="pedir-btn">🤍 Pedir</button>
+            <span class="precio">S/. 99.90</span>
+            <button class="pedir-btn" id="pedir-btn"><span aria-hidden="true">🤍 Pedir</span></button>
           </div>
         </div>
 
         <div class="carta">
           <img src="./assets/img/carta7.png" alt="Lunes y Miércoles" />
           <div class="contenido">
-            <h3>Lunes y Miércoles de Mostrito - Combo</h3>
+            <h3>Lunes y Miércoles de Mostrito - Combo1</h3>
             <p>
               1/4 de pollo a la brasa + papas fritas + arroz chaufa + salsas.
             </p>
             <span class="precio oferta">S/. 19.90 <del>S/. 20.00</del></span>
-            <button class="pedir-btn">🤍 Pedir</button>
+            <button class="pedir-btn" id="pedir-btn"><span aria-hidden="true">🤍 Pedir</span></button>
           </div>
         </div>
       </div>
@@ -134,7 +125,7 @@
             <h3>1/4 Brasa con Acompañamiento y Ensalada - Combo 2</h3>
             <p>1/4 Brasa con bol, 1 papa frita, ensalada personal, salsas.</p>
             <span class="precio">S/. 29.90</span>
-            <button class="pedir-btn">🤍 Pedir</button>
+            <button class="pedir-btn" id="pedir-btn"><span aria-hidden="true">🤍 Pedir</span></button>
           </div>
         </div>
 
@@ -144,7 +135,7 @@
             <h3>1/4 Brasa con Papas y Ensalada - Combo 3</h3>
             <p>1/4 Brasa con bol, 1 papa frita, ensalada personal, salsas.</p>
             <span class="precio">S/. 25.90</span>
-            <button class="pedir-btn">🤍 Pedir</button>
+            <button class="pedir-btn" id="pedir-btn"><span aria-hidden="true">🤍 Pedir</span></button>
           </div>
         </div>
 
@@ -156,7 +147,7 @@
               1 Pollo entero con bol, 1 papa frita, ensalada familiar, salsas.
             </p>
             <span class="precio">S/. 81.90</span>
-            <button class="pedir-btn">🤍 Pedir</button>
+            <button class="pedir-btn" id="pedir-btn"><span aria-hidden="true">🤍 Pedir</span></button>
           </div>
         </div>
         <div class="carta">
@@ -170,7 +161,7 @@
               Fresca Familiar, Salsas
             </p>
             <span class="precio">S/. 89.90</span>
-            <button class="pedir-btn">🤍 Pedir</button>
+            <button class="pedir-btn" id="pedir-btn"><span aria-hidden="true">🤍 Pedir</span></button>
           </div>
         </div>
         <div class="carta">
@@ -184,7 +175,7 @@
               Fresca Familiar, Salsas.
             </p>
             <span class="precio">S/. 89.90</span>
-            <button class="pedir-btn">🤍 Pedir</button>
+            <button class="pedir-btn" id="pedir-btn"><span aria-hidden="true">🤍 Pedir</span></button>
           </div>
         </div>
         <div class="carta">
@@ -198,7 +189,7 @@
               Fresca Mediana, Salsas
             </p>
             <span class="precio">S/. 49.90</span>
-            <button class="pedir-btn">🤍 Pedir</button>
+            <button class="pedir-btn" id="pedir-btn"><span aria-hidden="true">🤍 Pedir</span></button>
           </div>
         </div>
     </main>
@@ -210,7 +201,10 @@
       </div>
   </div>
 
-    <script src="./assets/js/dash.js"></script>
+    
     <script src="./assets/js/carta.js"></script>
+    <script src="./assets/js/dash.js"></script>
+    <script src="./assets/js/pedidos.js"></script>
+
   </body>
 </html>

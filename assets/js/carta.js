@@ -1,30 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const modal = document.getElementById("modal");
-  const closeModal = document.querySelector(".close");
-  const buttons = document.querySelectorAll(".pedir-btn");
-
-  modal.style.display = "none";
-
-  buttons.forEach((button) => {
-    button.addEventListener("click", function (event) {
-      event.preventDefault(); // 🚀 Evita que el enlace se active
-      modal.style.display = "flex"; // Mostrar el modal
-    });
-  });
-
-  closeModal.addEventListener("click", function () {
-    modal.style.display = "none"; // Ocultar el modal
-    window.location.href = "pedidos.html"; // Redirigir después de cerrar el modal
-  });
-
-  window.addEventListener("click", function (event) {
-    if (event.target === modal) {
-      modal.style.display = "none"; // Cierra si se hace clic fuera del modal
-    }
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
   const pedirBotones = document.querySelectorAll(".pedir-btn");
 
   function obtenerPedidos() {
